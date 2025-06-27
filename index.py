@@ -3,7 +3,7 @@ import streamlit_shadcn_ui as ui
 import pickle
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
-with open('https://github.com/MahmoudMobarak/RFC-Liver-Cancer/blob/main/liver_cancer_rfc.pkl', 'rb') as f:
+with open('liver_cancer_rfc.pkl', 'rb') as f:
     RFC = pickle.load(f)
 feature_name=['Age', 'Gender', 'Total_Bilirubin', 'Direct_Bilirubin',
        'Alkaline_Phosphotase', 'Alamine_Aminotransferase',
